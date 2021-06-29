@@ -18,3 +18,7 @@ class CreatTodo(CreateView):
     model = TodoList
     fields = ['title','body','image','prioroty','star']
     success_url = '/'
+
+class DeletPage(DeleteView):
+    model = TodoList
+    success_url = '/'

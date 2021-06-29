@@ -41,6 +41,12 @@
                   <a href=""><h4>{{object.title}}</h4></a>
                   <p>{{object.body}}</p>
               </div>
+              <div>
+                  <a href="{% url 'main:delets' main.id %}"></a>
+                  <button class="btn btn-danger">
+                      delet
+                  </button>
+              </div>
               {% endfor %}
           </div>
       </div>
